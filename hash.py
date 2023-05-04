@@ -1,4 +1,5 @@
 import sys
+from termcolor import colored
 
 hash_value = sys.argv[1]
 
@@ -25,6 +26,7 @@ hash_lengths_to_algorithms = {
 algorithm = hash_lengths_to_algorithms.get(len(hash_value), "Unknown algorithm")
 
 if isinstance(algorithm, list):
-    print(f"Matching algorithms: {', '.join(algorithm)}")
+    algorithms = ", ".join(algorithm)
+    print(colored(f"Matching algorithms: {algorithms}", "red"))
 else:
-    print("Algorithm used:", algorithm)
+    print(colored(f"Algorithm used: {algorithm}", "red"))
