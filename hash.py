@@ -4,7 +4,7 @@ from termcolor import colored
 def main():
     # Check for help menu
     if len(sys.argv) > 1 and (sys.argv[1] == '-h' or sys.argv[1] == '--help'):
-        print('Usage: python script.py <hash_value>')
+        print('Usage: hash-hound <hash_value>')
         print(''' 
         For example :- hash-hound 8d6e34f987851aa599257d3831a1af040886842f
         Output:- Algorithm used: SHA1:100 
