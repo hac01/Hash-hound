@@ -1,6 +1,5 @@
 import sys
 from termcolor import colored
-import pandas
 
 def main():
     # Check for help menu
