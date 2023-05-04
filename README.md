@@ -4,7 +4,12 @@ A simple python script to identify different hashes
 # Use pip to install 
 ```pip install hash-hound```
 
-To use this program 
+# Usage 
 
-
-```hash-hound 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824```
+```hash-hound --help
+Usage: python hash-hound <hash_value>
+ 
+        For example :- hash-hound 8d6e34f987851aa599257d3831a1af040886842f
+        Output:- Algorithm used: SHA1:100 
+        Here SHA1 is the hashing algorithm and 100 is Hashcat mode for ex: "-m 100"
+```
